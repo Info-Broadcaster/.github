@@ -6,6 +6,8 @@ Cette application permet également de partager les informations résumées dans
 
 Ainsi pour pouvoir utiliser l'application, il est nécessaire de se connecter avec ses identifiants Rainbow.
 
+---
+
 ## Backend
 
 ### Organisation du projet
@@ -13,42 +15,18 @@ Ainsi pour pouvoir utiliser l'application, il est nécessaire de se connecter av
 ```
 /
 ├── API                   # Dossier contenant l'API avec les logiques de resumé et traduction
+  └── logique             # Traitement des informations reçues par les routes et l"IA
+  └── routes              # Route API qui vérifie le contenu, traite les requêtes
+  └── tests               # Tests unitaires des routes et logique
+  └── utils.js            # Script qui gère la couche de base de l'implémentation de l'IA
+  └── index.js            # Fichier principal qui initialise l'application backend
   └── package.json        # Liste des dépendances Node.js
   └── package-lock.json
-├── AI-Model              # Modèle IA
+├── AI-Model              # Dossier contenant le modèle IA et possibilité de lancer en local
 ├── postman-api           # Fichier  à importer dans Postman pour tester les requêtes
 ├── README.md             # Readme du repository
 
 ```
-
-#### Sous-dossier API
-
-- **Logique**: Partie logique, traitement des informations reçues via les routes.
-  - Exemple: Résumé d'un article avec un prompt comme *"Résume l'article suivant"* et envoi du lien à l'IA.
-- **Routes**: Porte d'entrée pour les opérations, vérifie le contenu de la requête avant de l'envoyer à l'IA pour traitement.
-  - Exemple: Résumé d'un article avec en paramètre le lien de l'article, retournant un JSON contenant le résumé en appelant la logique.
-
-> **Note**: Il est impératif de ne pas mélanger la logique et les routes afin de préserver une bonne séparation des responsabilités.
-
-#### Sous-dossiers du modèle IA (**AI-Model**)
-- **Dockerfile**:  
-  Gère la création de l'image Docker pour le modèle IA, définissant l'environnement et les dépendances nécessaires.
-  
-- **Makefile**:  
-  Fournit des commandes pour gérer l'environnement du modèle IA, comme le démarrage, l'arrêt et d'autres opérations.  
-
-- **docker-compose.yaml**:  
-  Fichier pour orchestrer les conteneurs Docker, avec des configurations pour exécuter le modèle IA.  
-
-- **install.sh**:  
-  Script shell qui automatise l'installation des dépendances ou la configuration de l'environnement nécessaire pour le modèle IA.
-
-#### Fichiers du dossier backend
-
-- **index.js**: Fichier principal qui initialise l'application, contenant les constantes (comme le numéro de port).
-- **.gitignore**: Fichier qui définit les parties à ignorer par Git lors des push/pull.
-
----
 
 ### Developpez localement
 
@@ -65,8 +43,6 @@ npm run local
 ```
 > N.B: Cette commande est un alias du script node qui lancera nodemon.
 
----
-
 ### Lancez les tests unitaires
 
 Pour lancer les tests unitaires du backend, lancez la commande suivante:
@@ -75,12 +51,10 @@ Pour lancer les tests unitaires du backend, lancez la commande suivante:
 npm test
 ```
 
----
-
 ### Technologies utilisées
-- **Node.js express** pour le Backend
-- **Ollama** pour le package manager du modèle IA
-- **Jest** pour lancer les tests unitaires
+- **[Express Node.js](http://expressjs.com/)** pour le Backend
+- **[Ollama](https://ollama.com/)** comme package manager du modèle IA
+- **[Jest](https://jestjs.io/)** comme framework de suite de tests 
 
 ---
 
@@ -89,13 +63,12 @@ npm test
 ### Organisation du projet
 ```
 /
-├── public                  # Fichiers multimédias propre au serveur
+├── public                  # Fichiers multimédia accessible aux utilisateur externe
 ├── src                     # Code source
-  └── assets                # Logo de réact
+  └── assets                # Fichier multimédia propre au serveur
   └── components            # Composants d'affichage
   └── functions             # Gestion de l'authentification
 ```
----
 
 ### Déveloper localement
 
@@ -103,9 +76,10 @@ npm test
 npm run dev
 ```
 
----
 ### Technologies utilisées
-- **React** pour le framework
+- **[React](https://react.dev/)** comme framework JS pour la création des composants
+- **[Vite](https://vite.dev/)** comme moteur de développement
+
 ---
 
 ## Ressources importantes
@@ -113,5 +87,3 @@ npm run dev
 - [Lien Maquette Figma](https://www.figma.com/file/hDj5AWrREvboq14DKgZxUi/Untitled?type=whiteboard&node-id=0%3A1&t=Jj1iuTZdETlhQiny-1)
 - [Liens Utiles - TensorFlow.NET](https://github.com/SciSharp/TensorFlow.NET?tab=readme-ov-file)
 - [Documentation API Rainbow](https://developers.openrainbow.com/)
-
----
