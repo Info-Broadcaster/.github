@@ -1,6 +1,6 @@
 # INFOBROADCASTER :globe_with_meridians:
 
-InfoBroadcaster est une application web développé sur une stack NodeJS dont **Express** pour le backend, et **React** pour le front qui permet de résumer automatiquement les informations d'un article en lui fournissant l'url.
+[InfoBroadcaster](https://infobroadcaster.netlify.app) est une application web développé sur une stack NodeJS dont **Express** pour le backend, et **React** pour le front qui permet de résumer automatiquement les informations d'un article en lui fournissant l'url.
 
 Cette application permet également de partager les informations résumées dans des bulles [Rainbow](https://web-sandbox.openrainbow.com). 
 
