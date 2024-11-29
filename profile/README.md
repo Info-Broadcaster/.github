@@ -91,12 +91,13 @@ npm run dev
 ---
 
 ## Contributors
-- @bobylatruffe alias Fatih B.
-- @Erestona alias Tanguy P.
-- @ShortLegsFox alias Ian B.
-- @Nerlake alias Léo H.
-- @Vladimir9595 alias Vladimir S.
-- @maxime-hell alias Maxime H.
-- @EpitronX alias Jérémie M.
-- @htregnagoCNAM alias Hugo T.
-- @WRKT alias Winness R.
+
+- [@bobylatruffe](https://github.com/bobylatruffe) alias Fatih B.  
+- [@Erestona](https://github.com/Erestona) alias Tanguy P.  
+- [@ShortLegsFox](https://github.com/ShortLegsFox) alias Ian B.  
+- [@Nerlake](https://github.com/Nerlake) alias Léo H.  
+- [@Vladimir9595](https://github.com/Vladimir9595) alias Vladimir S.  
+- [@maxime-hell](https://github.com/maxime-hell) alias Maxime H.  
+- [@EpitronX](https://github.com/EpitronX) alias Jérémie M.  
+- [@htregnagoCNAM](https://github.com/htregnagoCNAM) alias Hugo T.  
+- [@WRKT](https://github.com/WRKT) alias Winness R.  
