@@ -87,3 +87,16 @@ npm run dev
 - [Lien Maquette Figma](https://www.figma.com/file/hDj5AWrREvboq14DKgZxUi/Untitled?type=whiteboard&node-id=0%3A1&t=Jj1iuTZdETlhQiny-1)
 - [Liens Utiles - TensorFlow.NET](https://github.com/SciSharp/TensorFlow.NET?tab=readme-ov-file)
 - [Documentation API Rainbow](https://developers.openrainbow.com/)
+
+---
+
+## Contributors
+- @bobylatruffe alias Fatih B.
+- @Erestona alias Tanguy P.
+- @ShortLegsFox alias Ian B.
+- @Nerlake alias Léo H.
+- @Vladimir9595 alias Vladimir S.
+- @maxime-hell alias Maxime H.
+- @EpitronX alias Jérémie M.
+- @htregnagoCNAM alias Hugo T.
+- @WRKT alias Winness R.
