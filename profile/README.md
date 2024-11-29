@@ -1,8 +1,15 @@
-# Info BROADCASTER :globe_with_meridians:
+# INFOBROADCASTER :globe_with_meridians:
+
+InfoBroadcaster est une application web développé sur une stack NodeJS dont **Express** pour le backend, et **React** pour le front qui permet de résumer automatiquement les informations d'un article en lui fournissant l'url.
+
+Cette application permet également de partager les informations résumées dans des bulles [Rainbow](https://web-sandbox.openrainbow.com). 
+
+Ainsi pour pouvoir utiliser l'application, il est nécessaire de se connecter avec ses identifiants Rainbow.
 
 ## Backend
 
 ### Organisation du projet
+
 ```
 /
 ├── API                   # Dossier contenant l'API avec les logiques de resumé et traduction
@@ -15,6 +22,7 @@
 ```
 
 #### Sous-dossier API
+
 - **Logique**: Partie logique, traitement des informations reçues via les routes.
   - Exemple: Résumé d'un article avec un prompt comme *"Résume l'article suivant"* et envoi du lien à l'IA.
 - **Routes**: Porte d'entrée pour les opérations, vérifie le contenu de la requête avant de l'envoyer à l'IA pour traitement.
@@ -36,12 +44,14 @@
   Script shell qui automatise l'installation des dépendances ou la configuration de l'environnement nécessaire pour le modèle IA.
 
 #### Fichiers du dossier backend
+
 - **index.js**: Fichier principal qui initialise l'application, contenant les constantes (comme le numéro de port).
 - **.gitignore**: Fichier qui définit les parties à ignorer par Git lors des push/pull.
 
 ---
 
 ### Developpez localement
+
 Pour lancer l'environnement backend en local, naviguez dans le dossier API, et lancez les commandes suivantes:
 
 ```shell
@@ -57,9 +67,20 @@ npm run local
 
 ---
 
+### Lancez les tests unitaires
+
+Pour lancer les tests unitaires du backend, lancez la commande suivante:
+
+```shell
+npm test
+```
+
+---
+
 ### Technologies utilisées
 - **Node.js express** pour le Backend
 - **Ollama** pour le package manager du modèle IA
+- **Jest** pour lancer les tests unitaires
 
 ---
 
@@ -75,7 +96,9 @@ npm run local
   └── functions             # Gestion de l'authentification
 ```
 ---
-### Déveloper localement  
+
+### Déveloper localement
+
 ```shell
 npm run dev
 ```
