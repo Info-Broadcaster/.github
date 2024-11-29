@@ -13,18 +13,19 @@ Ainsi pour pouvoir utiliser l'application, il est nécessaire de se connecter av
 ### Organisation du projet
 
 ```
-/
-├── API                   # Dossier contenant l'API avec les logiques de resumé et traduction
-  └── logique             # Traitement des informations reçues par les routes et l"IA
-  └── routes              # Route API qui vérifie le contenu, traite les requêtes
-  └── tests               # Tests unitaires des routes et logique
-  └── utils.js            # Script qui gère la couche de base de l'implémentation de l'IA
-  └── index.js            # Fichier principal qui initialise l'application backend
-  └── package.json        # Liste des dépendances Node.js
-  └── package-lock.json
-├── AI-Model              # Dossier contenant le modèle IA et possibilité de lancer en local
-├── postman-api           # Fichier  à importer dans Postman pour tester les requêtes
-├── README.md             # Readme du repository
+📂 /
+├── 📂 API                   # Dossier contenant l'API avec les logiques de résumé et traduction
+│   ├── 📂 logique           # Traitement des informations reçues par les routes et l'IA
+│   ├── 📂 routes            # Route API qui vérifie le contenu, traite les requêtes
+│   ├── 📂 tests             # Tests unitaires des routes et logique
+│   ├── 📄 utils.js          # Script qui gère la couche de base de l'implémentation de l'IA
+│   ├── 📄 index.js          # Fichier principal qui initialise l'application backend
+│   ├── 📄 package.json      # Liste des dépendances Node.js
+│   ├── 📄 package-lock.json # Verrouillage des dépendances pour des builds reproductibles
+├── 📂 AI-Model              # Dossier contenant le modèle IA et possibilité de lancer en local
+├── 📄 postman-api           # Fichier à importer dans Postman pour tester les requêtes
+├── 📄 README.md             # Readme du repository
+
 
 ```
 
@@ -62,12 +63,13 @@ npm test
 
 ### Organisation du projet
 ```
-/
-├── public                  # Fichiers multimédia accessible aux utilisateur externe
-├── src                     # Code source
-  └── assets                # Fichier multimédia propre au serveur
-  └── components            # Composants d'affichage
-  └── functions             # Gestion de l'authentification
+📂 /
+├── 📂 public                  # Fichiers multimédia accessibles directement par les utilisateurs externes
+├── 📂 src                     # Code source de l'application
+│   ├── 📂 assets              # Fichiers multimédia utilisés en interne par le serveur
+│   ├── 📂 components          # Composants réutilisables pour l'affichage
+│   ├── 📂 functions           # Fonctions pour la gestion de l'authentification et de la logique métier
+
 ```
 
 ### Déveloper localement
