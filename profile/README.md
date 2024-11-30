@@ -1,4 +1,7 @@
-# INFOBROADCASTER :globe_with_meridians:
+<h1 align="center">🌐 InfoBroadcaster</h1>
+<p align="center"><strong><em>Broadcast your Infos with ease</em></strong></p>
+
+---
 
 [InfoBroadcaster](https://infobroadcaster.netlify.app) est une application web développé sur une stack NodeJS dont **Express** pour le backend, et **React** pour le front qui permet de résumer automatiquement les informations d'un article en lui fournissant l'url.
 
@@ -8,7 +11,7 @@ Ainsi pour pouvoir utiliser l'application, il est nécessaire de se connecter av
 
 ---
 
-## Backend
+## 🚀 Backend
 
 ### Organisation du projet
 
@@ -23,7 +26,6 @@ Ainsi pour pouvoir utiliser l'application, il est nécessaire de se connecter av
 │   ├── 📄 package.json      # Liste des dépendances Node.js
 │   ├── 📄 package-lock.json # Verrouillage des dépendances pour des builds reproductibles
 ├── 📂 AI-Model              # Dossier contenant le modèle IA et possibilité de lancer en local
-├── 📄 postman-api           # Fichier à importer dans Postman pour tester les requêtes
 ├── 📄 README.md             # Readme du repository
 
 
@@ -59,7 +61,7 @@ npm test
 
 ---
 
-## Frontend
+## 💻 Frontend
 
 ### Organisation du projet
 ```
@@ -69,6 +71,8 @@ npm test
 │   ├── 📂 assets              # Fichiers multimédia utilisés en interne par le serveur
 │   ├── 📂 components          # Composants réutilisables pour l'affichage
 │   ├── 📂 functions           # Fonctions pour la gestion de l'authentification et de la logique métier
+│── 📄 package.json            # Liste des dépendances Node.js
+│── 📄 package-lock.json       # Verrouillage des dépendances pour des builds reproductibles
 
 ```
 
@@ -84,15 +88,15 @@ npm run dev
 
 ---
 
-## Ressources importantes
-- [Lien Excel des User Stories](https://docs.google.com/spreadsheets/d/1AgSSx4N9MPHHEJpwb3tNtURM2AWaZLXGsi03HbrfYrI/edit#gid=0)
-- [Lien Maquette Figma](https://www.figma.com/file/hDj5AWrREvboq14DKgZxUi/Untitled?type=whiteboard&node-id=0%3A1&t=Jj1iuTZdETlhQiny-1)
-- [Liens Utiles - TensorFlow.NET](https://github.com/SciSharp/TensorFlow.NET?tab=readme-ov-file)
+## 🔗 Ressources importantes
+- [Project User Stories](https://docs.google.com/spreadsheets/d/1AgSSx4N9MPHHEJpwb3tNtURM2AWaZLXGsi03HbrfYrI/edit#gid=0)
+- [Maquette Figma](https://www.figma.com/file/hDj5AWrREvboq14DKgZxUi/Untitled?type=whiteboard&node-id=0%3A1&t=Jj1iuTZdETlhQiny-1)
 - [Documentation API Rainbow](https://developers.openrainbow.com/)
+- [Ollama docs](https://github.com/ollama/ollama/tree/main/docs)
 
 ---
 
-## Contributors
+## 🧑‍💻 Contributors
 
 - [@bobylatruffe](https://github.com/bobylatruffe) alias Fatih B.  
 - [@Erestona](https://github.com/Erestona) alias Tanguy P.  
