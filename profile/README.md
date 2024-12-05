@@ -31,18 +31,24 @@ Cette application permet également de partager les informations résumées dans
 
 ### Developpez localement
 
-Pour lancer l'environnement backend en local, naviguez dans le dossier API, et lancez les commandes suivantes:
+Pour lancer l'environnement backend en local, clonez le dépôt backend, naviguez dans le dossier API, et lancez la commande `npm` qui permet de lancer l'environnement backend.
 
 ```shell
-npm start
+git clone https://github.com/Info-Broadcaster/backend.git
 ```
 
+```shell
+cd backend/API/
+npm start
+```
 Pour avoir un reload automatique du serveur NodeJS après modification des fichiers:
 
 ```shell
 npm run local
 ```
 > 💡 N.B: Cette commande est un alias du script node qui lancera nodemon.
+
+🏁 Ainsi, en local, l'environnement sera accessible depuis l'adresse `http://localhost:3000`
 
 ### Lancez les tests unitaires
 
@@ -77,9 +83,18 @@ npm test
 
 ### Développez localement
 
+Pour lancer l'environnement front en local, clonez le repository frontend du projet puis lancez l'environnement.
+
 ```shell
+git clone https://github.com/Info-Broadcaster/frontend.git
+```
+
+```shell
+cd frontend/
 npm run dev
 ```
+
+🏁 Ainsi, en local, l'environnement sera donc accessible depuis l'adresse `http://localhost:5173`
 
 ### Technologies utilisées
 
